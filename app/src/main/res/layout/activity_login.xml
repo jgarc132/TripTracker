@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="men2a.victoria.triptracker.LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="                                     Welcome to Our App" />
+
+    <EditText
+        android:id="@+id/enter_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/email_hint" >
+        <requestFocus/>
+    </EditText>
+
+    <EditText
+        android:id="@+id/enter_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/enter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/name_hint"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2fcfe"
+        android:textColor="#070000"
+        android:text="@string/login_button" />
+
+    <TextView
+        android:id="@+id/sign_up_text"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="@dimen/spacer"
+        android:gravity="center"
+        android:text="@string/sign_up_text" />
+
+    <TextView
+        android:id="@+id/cancel_signup_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacer"
+        android:text="@string/cancel_signup_text"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2fcfe"
+        android:textColor="#070000"
+        android:text="SIGN ME UP"
+        android:visibility="gone"/>
+</LinearLayout>
